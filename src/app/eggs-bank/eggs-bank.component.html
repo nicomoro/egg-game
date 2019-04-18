@@ -1,0 +1,14 @@
+<a routerLink="/profile/:id"><button >Previous page</button></a>
+<a routerLink="../myeggs"><button >My eggs</button></a>
+<div class="row">
+<div *ngFor="let egg of eggsList">
+<div class="card text-{{egg.color}}" style="width: 18rem;">
+  <div class="card-body">
+    <h2 class="card-title">{{egg.name}}</h2>
+    <h5 class="card-text">Power :</h5>
+    <p class="card-text">{{egg.power}} </p>
+    <a routerLink="eggdetail/{{ egg.id }}" class="card-link">Details</a>
+  </div>
+</div>
+</div>
+</div> 

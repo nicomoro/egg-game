@@ -9,9 +9,12 @@ import { ChooseComponent } from './choose/choose.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OeufComponent } from './oeuf/oeuf.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { EggsBankComponent } from './eggs-bank/eggs-bank.component';
 import { LootComponent } from './loot/loot.component';
 import { Quete1Component } from './quete1/quete1.component';
 import { Quete2Component } from './quete2/quete2.component';
+import { EggDetailComponent } from './egg-detail/egg-detail.component';
+import { MyComponent } from './my-eggs/my.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { Quete2Component } from './quete2/quete2.component';
     NavBarComponent,
     OeufComponent,
     WelcomeComponent,
+    EggsBankComponent,
     LootComponent,
     Quete1Component,
     Quete2Component,
+    EggDetailComponent,
+    MyComponent,
   ],
   imports: [
     BrowserModule,

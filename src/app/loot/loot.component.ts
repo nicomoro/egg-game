@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LootService } from '../../assets/common/services/loot.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { EggsRandom } from 'src/assets/common/models/eggsRandom.model';
+import { EggService } from 'src/assets/common/services/egg.service';
 
 @Component({
   selector: 'app-loot',
@@ -21,9 +22,15 @@ export class LootComponent implements OnInit {
 
 
   constructor(private service: LootService,
-              public activatedRoute: ActivatedRoute) { }
+              public activatedRoute: ActivatedRoute,
+              public serviceEgg: EggService) { }
 
   ngOnInit() {
+  }
+
+  addMyEgg(id){
+    this.serviceEgg.newEgg(id),
+    console.log(id)
   }
 
   pay() {
