@@ -16,6 +16,7 @@ export class NavBarComponent implements OnInit {
   public picture: string;
   public name: string;
   public origin: string;
+  public money = 10;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
