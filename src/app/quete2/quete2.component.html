@@ -1,0 +1,19 @@
+<h1 class="text-center">Charade de Pâques</h1>
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="submit()" class="col-6 mx-auto">
+
+      <div class="form-group">
+        <label>`Mon premier est le contraire de froid.
+          Mon deuxième attache.
+          Mon troisième est la première lettre de l'alphabet.
+          
+          Mon tout sert à fabriquer des oeufs de Pâques.`</label>
+        <input formControlName="reponse" class="form-control" type="text" />
+      </div>
+      <p *ngIf="myForm.get('reponse').hasError('Chocolat')" 
+      class="label label-danger">Essaye encore</p>
+ 
+  <input type="submit" class="btn btn-primary" />
+  <button [hidden]="hide">Next</button>
+  </form>
+</div>
