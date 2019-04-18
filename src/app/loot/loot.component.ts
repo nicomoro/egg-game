@@ -10,7 +10,12 @@ import { EggsRandom } from 'src/assets/common/models/eggsRandom.model';
   styleUrls: ['./loot.component.css']
 })
 export class LootComponent implements OnInit {
+
+  public picture: string;
   public randEgg: EggsRandom;
+  public name: string;
+  public farming: number;
+  public power: string;
 
   constructor(private service: LootService,
               public activatedRoute: ActivatedRoute) { }
@@ -23,6 +28,11 @@ export class LootComponent implements OnInit {
       (egg: EggsRandom) => {
         this.randEgg = egg;
         console.log(egg);
+        this.picture = egg.image;
+        console.log(egg.image);
+        this.name = egg.name;
+        this.farming = egg.farming;
+        this.power = egg.power;
       });
   }
 }

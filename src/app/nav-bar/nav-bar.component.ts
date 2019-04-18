@@ -16,6 +16,7 @@ export class NavBarComponent implements OnInit {
   public name: string;
   public origin: string;
   public money = 10;
+  public id: string;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
@@ -34,6 +35,7 @@ export class NavBarComponent implements OnInit {
         this.picture = profile.image;
         this.name = profile.name;
         this.origin = profile.origin;
+        this.id = profile.id;
       });
     });
   }
