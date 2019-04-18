@@ -12,7 +12,7 @@ export class EggService {
   constructor(
 
   public http: HttpClient,
-    
+
     ) { }
 
   public myeggs= []
