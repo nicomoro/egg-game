@@ -16,11 +16,13 @@ export class LootComponent implements OnInit {
               public activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-      this.service.getEggsRandom().subscribe(
+  }
+
+  pay() {
+    this.service.getEggsRandom().subscribe(
       (egg: EggsRandom) => {
         this.randEgg = egg;
         console.log(egg);
-        // this.picture = egg.image;
       });
   }
 }
