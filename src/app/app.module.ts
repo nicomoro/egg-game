@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ChooseComponent } from './choose/choose.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OeufComponent } from './oeuf/oeuf.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { OeufComponent } from './oeuf/oeuf.component';
     ChooseComponent,
     NavBarComponent,
     OeufComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
