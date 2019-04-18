@@ -16,8 +16,8 @@ export class ProfileService {
     this.service  =  PARAM_SERVICE;
   }
 
-  public getProfile(): Observable<Profile> {
-    const  obs1: Observable<any> = this.service.get('http://easteregg.wildcodeschool.fr/api/characters/5cac51240d488f0da6151c60');
+  public getProfile(id): Observable<Profile> {
+    const  obs1: Observable<any> = this.service.get(`http://easteregg.wildcodeschool.fr/api/characters/${id}`);
     const  treatment  = (PARAM_DATA: any) => {
       return  PARAM_DATA as Profile;
       console.log(PARAM_DATA);
