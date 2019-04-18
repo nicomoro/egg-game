@@ -3,14 +3,22 @@ import { LootService } from '../../assets/common/services/loot.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { EggsRandom } from 'src/assets/common/models/eggsRandom.model';
 
-
 @Component({
   selector: 'app-loot',
   templateUrl: './loot.component.html',
   styleUrls: ['./loot.component.css']
 })
 export class LootComponent implements OnInit {
+
+  public picture: string;
   public randEgg: EggsRandom;
+  public name: string;
+  public farming: number;
+  public power: string;
+  public id: string;
+
+  public hide = true;
+
 
   constructor(private service: LootService,
               public activatedRoute: ActivatedRoute) { }
@@ -21,8 +29,15 @@ export class LootComponent implements OnInit {
   pay() {
     this.service.getEggsRandom().subscribe(
       (egg: EggsRandom) => {
+        this.hide = false;
         this.randEgg = egg;
         console.log(egg);
+        this.picture = egg.image;
+        console.log(egg.image);
+        this.name = egg.name;
+        this.farming = egg.farming;
+        this.power = egg.power;
+        this.id = egg.id;
       });
   }
 }

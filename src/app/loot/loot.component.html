@@ -1,7 +1,26 @@
 
 
-
-
-
-
-<button (click)="pay()"> Pay and try your luck </button>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+<img src="../../assets/common/images/lootEgg.png" class="eggFab col">
+<p class="text-center col"><span>Slot Egg's Machine:</span> Pay and win an egg at random, if the chance you smile you may have a legendary egg!</p>
+<button class="pay col" (click)="pay()"> Pay and try your luck </button>
+</div>
+<div class="col-6" [hidden]="hide">
+    <img class="bounce-in-top" src='{{this.picture}}' alt="oeuf" width="70%">
+</div>
+<div class="col-2 pt-4" [hidden]="hide">
+  <div>
+  Name : {{this.name}}
+</div >
+<div class="pt-4">
+    Power : {{this.power}}
+  </div>
+  <div class="pt-4">
+    Farming : {{this.farming}}
+    </div>
+    <button class="mt-4" (click)="({{this.id}})">Add to my eggs</button>
+</div>
+</div>
+</div>
