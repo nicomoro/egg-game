@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileService } from 'src/assets/common/services/profile.service';
 import { Profile } from 'src/assets/common/models/profile.model';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-
-
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -29,7 +27,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
       const id = params.get('id');
-    this.service.getProfile(id).subscribe(
+      this.service.getProfile(id).subscribe(
       (profile: Profile) => {
         this.profil = profile;
         console.log(profile);
