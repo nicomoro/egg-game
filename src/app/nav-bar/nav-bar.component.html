@@ -1,1 +1,24 @@
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src='{{this.picture}}' class="profilPicture" >
+  </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <div class="text-light">Name : {{this.name}}</div>
+        <div class="text-light"> Origin : {{this.origin}}</div>
+        <div class="text-light"> Money <img src="../../assets/common/images/Coin.png" class="coinMenu" alt="coin"> :</div>
+      </li>
+      <div>
+      <li class="nav-item mt-3">
+        <a class="btn btn-info">Loot</a>
+        <a class="btn btn-info mr-5 ml-5">Egg's bank</a>
+          <a class="btn btn-info">Logout</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>
