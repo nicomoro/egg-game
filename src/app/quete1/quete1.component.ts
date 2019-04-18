@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Quete1Component implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
   }
+  ngOnInit() {
+   
 
+  }
+  
+  
 }
+
