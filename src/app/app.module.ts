@@ -9,6 +9,7 @@ import { ChooseComponent } from './choose/choose.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OeufComponent } from './oeuf/oeuf.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { LootComponent } from './loot/loot.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     NavBarComponent,
     OeufComponent,
     WelcomeComponent,
+    LootComponent,
   ],
   imports: [
     BrowserModule,

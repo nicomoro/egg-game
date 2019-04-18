@@ -6,7 +6,7 @@ export class Charactere {
         public origin: string,
         public image: string,
         public skills: [
-              string
+                string
             ]
     ) {
 
