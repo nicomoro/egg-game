@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { EggsBankComponent } from './eggs-bank/eggs-bank.component';
 import { LootComponent } from './loot/loot.component';
 import { EggDetailComponent } from './egg-detail/egg-detail.component';
+import { MyComponent } from './my-eggs/my.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { EggDetailComponent } from './egg-detail/egg-detail.component';
     EggsBankComponent,
     LootComponent,
     EggDetailComponent,
+    MyComponent,
   ],
   imports: [
     BrowserModule,
