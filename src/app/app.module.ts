@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OeufComponent } from './oeuf/oeuf.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EggsBankComponent } from './eggs-bank/eggs-bank.component';
+import { LootComponent } from './loot/loot.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { EggsBankComponent } from './eggs-bank/eggs-bank.component';
     OeufComponent,
     WelcomeComponent,
     EggsBankComponent,
+    LootComponent,
   ],
   imports: [
     BrowserModule,

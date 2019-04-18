@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Profile } from '../models/profile.model';
 import { map } from 'rxjs/operators';
+import { EggsRandom } from '../models/eggsRandom.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProfileService {
+export class LootService {
 
   private service: HttpClient;
 
@@ -16,14 +17,13 @@ export class ProfileService {
     this.service  =  PARAM_SERVICE;
   }
 
-  public getProfile(id): Observable<Profile> {
-    const  obs1: Observable<any> = this.service.get(`http://easteregg.wildcodeschool.fr/api/characters/${id}`);
+  public getEggsRandom(): Observable<EggsRandom> {
+    const  obs1: Observable<any> = this.service.get(`http://easteregg.wildcodeschool.fr/api/eggs/random`);
     const  treatment  = (PARAM_DATA: any) => {
-      return  PARAM_DATA as Profile;
+      return  PARAM_DATA as EggsRandom;
       console.log(PARAM_DATA);
     };
 
     return  obs1.pipe(map(treatment));
   }
-
 }
