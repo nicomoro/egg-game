@@ -8,6 +8,8 @@ import { OeufComponent } from './oeuf/oeuf.component';
 import { LootComponent } from './loot/loot.component';
 import { EggDetailComponent } from './egg-detail/egg-detail.component';
 import { MyComponent } from './my-eggs/my.component';
+import { Quete2Component } from './quete2/quete2.component';
+import { Quete1Component } from './quete1/quete1.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
@@ -24,14 +26,21 @@ const routes: Routes = [
         path: 'loot',
         component: LootComponent,
       },
-      { path: 'eggsBank', 
+      { path: 'eggsBank',
         component: EggsBankComponent
       },
       { path: 'eggdetail/:id', 
         component: EggDetailComponent },
-        
       { path: 'myeggs',
-        component: MyComponent }
+        component: MyComponent },
+      {
+        path: 'quete1',
+        component: Quete2Component
+        },
+        {
+        path: 'quete2',
+          component: Quete1Component
+          }
     ]
   }
 ];
