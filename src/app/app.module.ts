@@ -15,6 +15,9 @@ import { Quete1Component } from './quete1/quete1.component';
 import { Quete2Component } from './quete2/quete2.component';
 import { EggDetailComponent } from './egg-detail/egg-detail.component';
 import { MyComponent } from './my-eggs/my.component';
+import { Quete3Component } from './quete3/quete3.component';
+import { Quete4Component } from './quete4/quete4.component';
+import { Quete5Component } from './quete5/quete5.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { MyComponent } from './my-eggs/my.component';
     Quete2Component,
     EggDetailComponent,
     MyComponent,
+    Quete3Component,
+    Quete4Component,
+    Quete5Component,
   ],
   imports: [
     BrowserModule,
