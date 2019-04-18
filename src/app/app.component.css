@@ -120,17 +120,27 @@ p{
 }
 
 .blocYoshi{
-  position: fixed;
+  position: relative;
   bottom: 50px;
   padding-left: 8%;
-}
-
-#espace {
-
-  width:80px;
-  }
-
-  #espace1 {
-
-    width:80px;
+  padding-top: 30%
+ }
+ #espace {  width:80px;
+  }  
+  
+  #espace1 {    width:80px;
     }
+
+    @media (max-width:1200px){
+
+      h1 {display:none;}
+      img{
+        max-width: 80%;
+      }
+      
+}
+@media (max-width:600px){
+  p{
+    display:none;
+  }
+}
