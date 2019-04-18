@@ -30,8 +30,8 @@ export class Quete2Component implements OnInit {
 
     }
   }
-  quete1Finish(){
-    this.service.number = 2;
+  quete2Finish(){
+    this.service.number = 3;
   }
 
   submit() {
