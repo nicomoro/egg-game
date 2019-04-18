@@ -15,6 +15,7 @@ export class LootComponent implements OnInit {
   public name: string;
   public farming: number;
   public power: string;
+  public id: string;
 
   public hide = true;
 
@@ -36,6 +37,7 @@ export class LootComponent implements OnInit {
         this.name = egg.name;
         this.farming = egg.farming;
         this.power = egg.power;
+        this.id = egg.id;
       });
   }
 }
