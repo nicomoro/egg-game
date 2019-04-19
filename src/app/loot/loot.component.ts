@@ -24,6 +24,7 @@ export class LootComponent implements OnInit {
   public subject:Subject<any>=new Subject();
   public easter = false;
   easterImg: boolean;
+  public hideBtnAdd = false;
 
 
 
@@ -37,6 +38,7 @@ export class LootComponent implements OnInit {
 
   addMyEgg(id){
     this.serviceEgg.newEgg(id),
+    this.hideBtnAdd = true,
     console.log(id)
   }
 
@@ -47,6 +49,7 @@ export class LootComponent implements OnInit {
     console.log(this.serviceProfile.myMoney)
     this.service.getEggsRandom().subscribe(
       (egg: EggsRandom) => {
+        this.hideBtnAdd = false;
         this.hide = false;
         this.randEgg = egg;
         console.log(egg);
@@ -62,10 +65,10 @@ export class LootComponent implements OnInit {
         const error = confirm('You do not have enough money')
       }
   }
+  
   easterEgg(){
     const result = confirm('Now....you are rich !!!')
     this.easter = true;
     this.serviceProfile.easterEgg();
-    
   }
 }

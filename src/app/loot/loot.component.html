@@ -22,7 +22,7 @@
   <div class="pt-4">
     Farming : {{this.farming}}
     </div>
-    <button class="mt-4" (click)="addMyEgg(this.randEgg)">Add to my eggs</button>
+    <button class="mt-4" (click)="addMyEgg(this.randEgg)" [hidden]="hideBtnAdd">Add to my eggs</button>
 </div>
 </div>
 <div class="d-flex justify-content-center">
