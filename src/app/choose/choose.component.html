@@ -1,10 +1,13 @@
-<div class="cards" >  
 
-<div class="card bg-blue text-white" *ngFor="let user of users" >
-    <img src={{user.image}} class="card-img-top" alt="...">
-    <div class="card-img">
-      <h5 class="card-title"> {{user.name}} </h5>
-      <button class="btn btn-primary" routerLink="/profile/{{user.id}}">Choose me</button>
+<div class="cards-list">
+  
+  <div class="card 1" *ngFor="let user of users">
+    <div class="card_image"> <img src={{user.image}} /> </div>
+    <div class="card_title title-white">
+      <p>{{user.name}}</p>
+      <button class="btn btn-primary" routerLink="/profile/{{user.id}}">Choisis-moi</button>
     </div>
-
+  </div>
+  
+   
 </div>

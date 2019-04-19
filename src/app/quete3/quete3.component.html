@@ -4,12 +4,13 @@
 
       <div class="form-group">
         <label>Tu as 4 poussins et tu n'en veux que 3. Comment faire ?</label>
+        <div class="espace"></div>
         <input formControlName="reponse" class="form-control" type="text" />
       </div>
       <p *ngIf="myForm.get('reponse').hasError('Chocolat')" 
       class="label label-danger">Essaye encore</p>
  
-  <input type="submit" class="btn btn-primary" />
-  <button [hidden]="hide" routerLink="../" (click)="quete3Finish()">Next</button>
+ 
+      <img src="http://prettypoun.p.r.pic.centerblog.net/b36ba9ca.png"[hidden]="hide" routerLink="../" (click)="quete3Finish()"width="50%">
   </form>
 </div>

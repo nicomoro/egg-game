@@ -6,12 +6,13 @@
         <label>Mon premier est la moitié de mon tout.
           Mon deuxième est agréable à manger.
           Mon tout est comme mon deuxième.</label>
+          <div class="espace"></div>
         <input formControlName="reponse" class="form-control" type="text" />
       </div>
       <p *ngIf="myForm.get('reponse').hasError('Chocolat')" 
       class="label label-danger">Essaye encore</p>
  
-  <input type="submit" class="btn btn-primary" />
-  <button [hidden]="hide" routerLink="../" (click)="quete4Finish()">Next</button>
+  
+  <img src="http://prettypoun.p.r.pic.centerblog.net/b36ba9ca.png"[hidden]="hide" routerLink="../" (click)="quete4Finish()"width="50%">
   </form>
 </div>
