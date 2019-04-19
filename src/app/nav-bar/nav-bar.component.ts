@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileService } from 'src/assets/common/services/profile.service';
 import { Profile } from 'src/assets/common/models/profile.model';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { EggService } from 'src/assets/common/services/egg.service'
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -15,15 +16,19 @@ export class NavBarComponent implements OnInit {
   public picture: string;
   public name: string;
   public origin: string;
-  public money = 10;
+  public money= this.service.myMoney;
   public id: string;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
 
+  myegg = this.serviceEgg.myeggs
+
   constructor(private service: ProfileService,
-              public activatedRoute: ActivatedRoute) { }
+              public activatedRoute: ActivatedRoute,
+              public serviceEgg : EggService
+    ) { }
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
@@ -38,5 +43,8 @@ export class NavBarComponent implements OnInit {
         this.id = profile.id;
       });
     });
+    this.service.subject.subscribe((money: any)=>{
+      this.money = money
+    })
   }
 }
