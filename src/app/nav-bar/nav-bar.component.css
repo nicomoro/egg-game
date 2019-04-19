@@ -5,3 +5,25 @@
 .coinMenu{
     width: 3%
 }
+.butn {
+    background: #238315;
+    -webkit-border-radius: 41;
+    -moz-border-radius: 41;
+    border-radius: 41px;
+    -webkit-box-shadow: 0px 1px 14px #666666;
+    -moz-box-shadow: 0px 1px 14px #666666;
+    box-shadow: 0px 1px 14px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .butn:hover {
+    background: #5e9955;
+
+  }
+
+.text{
+    color:#238315;
+}

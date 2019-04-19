@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e9e7ddb4;">
   <a class="navbar-brand" href="#" routerLink="/profile/{{this.id}}">
     <img src='{{this.picture}}' class="profilPicture" >
   </a>
@@ -8,19 +8,20 @@
   <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
     <ul class="navbar-nav mr-auto">
       <li>
-        <div class="text-light">Name : {{this.name}}</div>
-        <div class="text-light"> Origin : {{this.origin}}</div>
-        <div class="text-light"> Money : {{this.money}} <img src="../../assets/common/images/Coin.png" class="coinMenu" alt="coin"></div>
-        <div class="text-light"> My eggs : {{this.myegg.length}} <img src="../../assets/common/images/egg.png" class="coinMenu" alt="coin"></div>
+        <div class="text">Name : {{this.name}}</div>
+        <div class="text"> Origin : {{this.origin}}</div>
+        <div class="text"> Money : {{this.money}} <img src="../../assets/common/images/Coin.png" class="coinMenu" alt="coin"></div>
+        <div class="text"> My eggs : {{this.myegg.length}} <img src="../../assets/common/images/egg.png" class="coinMenu" alt="coin"></div>
       </li>
       <div>
-      <li class="nav-item mt-3">
-        <a class="btn btn-info" routerLink="loot">Loot</a>
-        <a class="btn btn-info mr-5 ml-5" routerLink="eggsBank">Egg's bank</a>
-          <a class="btn btn-info" routerLink="">Logout</a>
+      <li class="nav-item mt-4">
+        <a class="butn m-5" routerLink="loot">Loot</a>
+        <a class="butn m-5" routerLink="eggsBank">Egg's bank</a>
+          <a class="butn  m-5" routerLink="">Logout</a>
         </li>
       </div>
     </ul>
   </div>
 </nav>
+
 <router-outlet></router-outlet>

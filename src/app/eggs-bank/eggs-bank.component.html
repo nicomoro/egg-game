@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-around">
+<div class="mt-5 d-flex justify-content-around">
 
 <a routerLink="/profile/:id"><div id="button">
     <span>Go back to my quest</span>
@@ -11,7 +11,7 @@
 
 <div class="row">
 <div *ngFor="let egg of eggsList">
-<div class="card m-4" style="width: 18rem; height:20rem" [ngStyle]="{'background-color': egg.color}">
+<div class="card ml-5 mt-5 ml-1" style="width: 18rem; height:20rem" [ngStyle]="{'background-color': egg.color}">
     <img class="card-img col" src="{{egg.image}}" alt="Card image">
     <div class="card-img-overlay">
     <h2 class="card-title rounded text-center">{{egg.name}}</h2>
