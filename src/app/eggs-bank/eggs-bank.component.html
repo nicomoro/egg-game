@@ -11,13 +11,17 @@
 
 <div class="row">
 <div *ngFor="let egg of eggsList">
-<div class="card text-{{egg.color}}" style="width: 18rem;">
-  <div class="card-body">
-    <h2 class="card-title">{{egg.name}}</h2>
-    <h5 class="card-text">Power :</h5>
-    <p class="card-text">{{egg.power}} </p>
-    <a routerLink="eggdetail/{{ egg.id }}" class="card-link">Details</a>
+<div class="card m-4" style="width: 18rem; height:20rem" [ngStyle]="{'background-color': egg.color}">
+    <img class="card-img col" src="{{egg.image}}" alt="Card image">
+    <div class="card-img-overlay">
+    <h2 class="card-title bg-secondary text-white rounded text-center">{{egg.name}}</h2>
+    <h5 class="card-text bg-secondary text-white rounded text-center">Power</h5><br>
+    <p class="card-text bg-secondary text-white rounded">{{egg.power}} </p>
   </div>
+    <div class="d-flex justify-content-center">
+    <a routerLink="../{{ egg.id }}" class="bg-secondary text-white rounded">Details</a>
+  </div>
+  
 </div>
 </div>
 </div> 

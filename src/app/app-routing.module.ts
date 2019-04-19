@@ -32,7 +32,7 @@ const routes: Routes = [
       { path: 'eggsBank',
       component: EggsBankComponent
     },
-    { path: 'eggdetail/:id', 
+    { path: ':id', 
     component: EggDetailComponent },
     { path: 'myeggs',
     component: MyComponent },
