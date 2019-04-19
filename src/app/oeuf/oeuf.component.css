@@ -124,3 +124,27 @@ img {
     }
   }
   
+.yoshi{
+        position : absolute;
+        bottom: 3%;
+        z-index: 1;
+}
+
+.egg{
+        position: absolute;
+        z-index: 2;
+}
+
+.return{
+        position: absolute;
+        z-index: 3;
+        left: 34.5%;
+        bottom: 12%;
+}
+
+.start{
+        position: absolute;
+        z-index: 3;
+        left: 47%;
+        bottom: 2%
+}

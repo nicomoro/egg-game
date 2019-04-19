@@ -1,4 +1,7 @@
 
-<img class="bounce-in-top" src="../../assets/common/images/step-{{this.num}}.png" alt="oeuf">
-<hr>
-<button class="bounce-in-top" class="vibrate-1" routerLink="quete{{this.num}}">Start the quest</button>
+<img class="bounce-in-top egg" src="../../assets/common/images/step-{{this.num}}.png" alt="oeuf">
+<img class="bounce-in-top yoshi" src="../../assets/common/images/dancingYoshi.gif" [hidden]="eggster" alt="yoshi">
+<div class="start">
+<button class="bounce-in-top btn" class="vibrate-1" routerLink="quete{{this.num}}" [hidden]="btnStart">Start the quest</button>
+</div>
+<button class="return" routerLink="" (click)="addLegend()" [hidden]="eggster"> Game completed. Add yoshi's egg and return to title menu</button>

@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
   public picture: string;
   public name: string;
   public origin: string;
-  public money= this.service.myMoney;
+  public money = this.service.myMoney;
   public id: string;
 
   toggleNavbar() {

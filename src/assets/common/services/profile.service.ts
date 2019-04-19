@@ -22,8 +22,18 @@ export class ProfileService {
     this.subject.next(this.myMoney)
   }
 
+  public easterEgg(){
+    this.myMoney += 10000;
+    this.subject.next(this.myMoney);
+  }
+
   public earnMoney(){
     this.myMoney+=20;
+    this.subject.next(this.myMoney)
+  }
+
+  public earnFinalMoney(){
+    this.myMoney+=200;
     this.subject.next(this.myMoney)
   }
   public getProfile(id): Observable<Profile> {

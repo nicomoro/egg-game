@@ -4,6 +4,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { EggsRandom } from 'src/assets/common/models/eggsRandom.model';
 import { EggService } from 'src/assets/common/services/egg.service';
 import { ProfileService } from 'src/assets/common/services/profile.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-loot',
@@ -20,6 +21,10 @@ export class LootComponent implements OnInit {
   public id: string;
   public money = this.serviceProfile.myMoney;
   public hide = true;
+  public subject:Subject<any>=new Subject();
+  public easter = false;
+  easterImg: boolean;
+
 
 
   constructor(private service: LootService,
@@ -56,5 +61,11 @@ export class LootComponent implements OnInit {
       else{
         const error = confirm('You do not have enough money')
       }
+  }
+  easterEgg(){
+    const result = confirm('Now....you are rich !!!')
+    this.easter = true;
+    this.serviceProfile.easterEgg();
+    
   }
 }

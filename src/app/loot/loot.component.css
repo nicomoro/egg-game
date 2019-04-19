@@ -1,0 +1,10 @@
+.easter{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    width: 3%;
+}
+
+.easter{
+    cursor: pointer;
+}

@@ -1,8 +1,11 @@
 
-<div class="card text-{{eggDetail.color}}" style="width: 18rem;">
-   <div class="card-body">
-     <h2 class="card-title">{{eggDetail.name}}</h2>
-     <h5 class="card-text">Power :</h5>
-     <p class="card-text">{{eggDetail.power}} </p>
-   </div>
- </div>
+   <div class="card" [ngStyle]="{'background-color': eggDetail.color}">
+     <img src="{{eggDetail.image}}" class="card-image" alt="an image">
+     <div class="card-body">
+       <h2>{{eggDetail.name}}</h2>
+       <div class=" d-flex flex-column justify-content-center">
+       <p>{{eggDetail.power}}</p>
+       <p>Rarity: {{eggDetail.rarity}}</p>
+      </div>
+     </div>
+   

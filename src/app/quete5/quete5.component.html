@@ -1,6 +1,6 @@
 <h1 class="text-center">Charade de Pâques</h1>
 <div class="container">
-  <form [formGroup]="myForm" (ngSubmit)="submit()" class="col-6 mx-auto">
+  <form [formGroup]="myForm" class="col-6 mx-auto">
 
       <div class="form-group">
         <label>Mon premier est un radis coupé en deux.
@@ -14,5 +14,7 @@
  
 
   <img src="http://prettypoun.p.r.pic.centerblog.net/b36ba9ca.png"[hidden]="hide" routerLink="../" (click)="quete5Finish()"width="50%">
+
+  <button [hidden]="hide" (click)="quete5Finish()" routerLink="../">Next</button>
   </form>
 </div>
