@@ -5,7 +5,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+p{
+  color: black;
+}
 .card {
   margin: 30px auto;
   width: 300px;
@@ -39,8 +41,8 @@ h1{
   font-size: 30px;
   margin-top: -80px;
   height: 40px;
-  background-color: black;
-  opacity: 0.6;
+  background-color: white;
+  opacity: 0.8;
 
 }
 
@@ -65,7 +67,10 @@ h1{
   }
 }
 
-
+.nuage{
+  margin-bottom: 20px;
+  margin-left:20%;
+}
 /*
 .card {
   margin: 30px auto;
