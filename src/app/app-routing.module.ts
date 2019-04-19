@@ -32,8 +32,6 @@ const routes: Routes = [
       { path: 'eggsBank',
       component: EggsBankComponent
     },
-    { path: ':id', 
-    component: EggDetailComponent },
     { path: 'myeggs',
     component: MyComponent },
     {
@@ -56,6 +54,8 @@ const routes: Routes = [
       path: 'quete5',
       component: Quete5Component
     },
+    { path: ':id',
+    component: EggDetailComponent },
   ]
 }
 ];
