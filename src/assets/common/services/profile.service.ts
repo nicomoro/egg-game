@@ -21,6 +21,11 @@ export class ProfileService {
     this.myMoney -= 5;
     this.subject.next(this.myMoney)
   }
+
+  public earnMoney(){
+    this.myMoney+=20;
+    this.subject.next(this.myMoney)
+  }
   public getProfile(id): Observable<Profile> {
     const  obs1: Observable<any> = this.service.get(`http://easteregg.wildcodeschool.fr/api/characters/${id}`);
     const  treatment  = (PARAM_DATA: any) => {
