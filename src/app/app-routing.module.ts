@@ -10,6 +10,9 @@ import { EggDetailComponent } from './egg-detail/egg-detail.component';
 import { MyComponent } from './my-eggs/my.component';
 import { Quete2Component } from './quete2/quete2.component';
 import { Quete1Component } from './quete1/quete1.component';
+import { Quete3Component } from './quete3/quete3.component';
+import { Quete4Component } from './quete4/quete4.component';
+import { Quete5Component } from './quete5/quete5.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
@@ -27,22 +30,34 @@ const routes: Routes = [
         component: LootComponent,
       },
       { path: 'eggsBank',
-        component: EggsBankComponent
-      },
-      { path: 'eggdetail/:id', 
-        component: EggDetailComponent },
-      { path: 'myeggs',
-        component: MyComponent },
-      {
-        path: 'quete1',
-        component: Quete2Component
-        },
-        {
-        path: 'quete2',
-          component: Quete1Component
-          }
-    ]
-  }
+      component: EggsBankComponent
+    },
+    { path: 'eggdetail/:id', 
+    component: EggDetailComponent },
+    { path: 'myeggs',
+    component: MyComponent },
+    {
+      path: 'quete1',
+      component: Quete1Component
+    },
+    {
+      path: 'quete2',
+      component: Quete2Component
+    },
+    {
+      path: 'quete3',
+      component: Quete3Component
+    },
+    {
+      path: 'quete4',
+      component: Quete4Component
+    },
+    {
+      path: 'quete5',
+      component: Quete5Component
+    },
+  ]
+}
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { EggService } from 'src/assets/common/services/egg.service';
+
 @Component({
   selector: 'app-quete5',
   templateUrl: './quete5.component.html',
@@ -8,14 +10,15 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 export class Quete5Component implements OnInit {
   public myForm: FormGroup;
   public hide = true;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+    public service: EggService) {
 
   }
   ngOnInit() {
     this.myForm = this.fb.group({
-      reponse: ['', [ Validators.required, this.validator1.bind(this)]]
+      reponse: ['',[ Validators.required, this.validator1.bind(this)]]
     });
-
+    
   }
   validator1(formControl: FormControl): {[s: string]: boolean} {
 // tslint:disable-next-line: triple-equals
@@ -26,6 +29,10 @@ export class Quete5Component implements OnInit {
       return null;
 
     }
+  }
+
+  quete4Finish(){
+    this.service.number = 5;
   }
 
   submit() {
