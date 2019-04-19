@@ -126,7 +126,7 @@ img {
   
 .yoshi{
         position : absolute;
-        bottom: 3%;
+        bottom: 12%;
         z-index: 1;
 }
 
@@ -138,13 +138,13 @@ img {
 .return{
         position: absolute;
         z-index: 3;
-        left: 34.5%;
-        bottom: 12%;
+        left: 33%;
+        bottom: 29%;
 }
 
 .start{
         position: absolute;
         z-index: 3;
-        left: 47%;
-        bottom: 2%
+        left: 45%;
+        bottom: 12%
 }
