@@ -4,10 +4,11 @@
   <div class="row">
     <div class="col-4">
 <img src="../../assets/common/images/lootEgg.png" class="eggFab col">
-<img src="../../assets/common/images/diams.png" class="easter" (click)="easterEgg()" [hidden]="easter">
+<img src="../../assets/common/images/diams.png"      title="Oh! You find me !"class="easter" (click)="easterEgg()" [hidden]="easter">
 <p class="text-center col"><span>Slot Egg's Machine:</span> Pay and win an egg at random, if the chance you smile you may have a legendary egg!</p>
 <button class="pay col" (click)="pay()"> Pay and try your luck </button>
 </div>
+
 <div class="col-6" [hidden]="hide">
     <img class="bounce-in-top" src='{{this.picture}}' alt="oeuf" width="70%">
 </div>
@@ -23,6 +24,8 @@
     </div>
     <button class="mt-4" (click)="addMyEgg(this.randEgg)">Add to my eggs</button>
 </div>
-<p></p>
+</div>
+<div class="d-flex justify-content-center">
+<img class="rounded" src="https://gifimage.net/wp-content/uploads/2018/11/mario-thumbs-up-gif-2.gif" [hidden]="!easter">
 </div>
 </div>

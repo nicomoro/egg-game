@@ -23,6 +23,7 @@ export class LootComponent implements OnInit {
   public hide = true;
   public subject:Subject<any>=new Subject();
   public easter = false;
+  easterImg: boolean;
 
 
 
@@ -65,5 +66,6 @@ export class LootComponent implements OnInit {
     const result = confirm('Now....you are rich !!!')
     this.easter = true;
     this.serviceProfile.easterEgg();
+    
   }
 }
