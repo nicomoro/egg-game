@@ -18,6 +18,7 @@ import { MyComponent } from './my-eggs/my.component';
 import { Quete3Component } from './quete3/quete3.component';
 import { Quete4Component } from './quete4/quete4.component';
 import { Quete5Component } from './quete5/quete5.component';
+import { QuetebonusComponent } from './quetebonus/quetebonus.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { Quete5Component } from './quete5/quete5.component';
     Quete3Component,
     Quete4Component,
     Quete5Component,
+    QuetebonusComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,7 +19,7 @@ export class Quete5Component implements OnInit {
   }
   validator1(formControl: FormControl): {[s: string]: boolean} {
 // tslint:disable-next-line: triple-equals
-    if (formControl.value === 'coquelet') {
+    if (formControl.value === 'dimanche') {
       this.hide = false;
     } else {
 
