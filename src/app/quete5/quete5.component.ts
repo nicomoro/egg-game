@@ -33,9 +33,12 @@ export class Quete5Component implements OnInit {
     }
   }
 
-  quete4Finish(){
+  quete5Finish() {
     this.service.number = 5;
-    this.profileService.earnFinalMoney()
+    this.profileService.earnFinalMoney();
+    this.service.btnS = true;
+    this.service.eggster = false;
+    this.service.number = 2;
   }
 
   submit() {

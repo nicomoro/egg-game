@@ -17,6 +17,8 @@ export class EggService {
 
   public myeggs= []
   public number = 1;
+  public btnS = false;
+  public eggster = true;
 
   public getEggs() {
     const  obs1: Observable<any> = this.http.get('http://easteregg.wildcodeschool.fr/api/eggs');
