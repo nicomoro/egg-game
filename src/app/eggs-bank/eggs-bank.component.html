@@ -1,5 +1,14 @@
-<a routerLink="/profile/:id"><button >Previous page</button></a>
-<a routerLink="../myeggs"><button >My eggs</button></a>
+<div class="d-flex justify-content-around">
+
+<a routerLink="/profile/:id"><div id="button">
+    <span>Go back to my quest</span>
+  </div></a>
+
+<a routerLink="../myeggs"><div id="button">
+    <span>My eggs</span>
+  </div></a>
+</div>
+
 <div class="row">
 <div *ngFor="let egg of eggsList">
 <div class="card text-{{egg.color}}" style="width: 18rem;">
