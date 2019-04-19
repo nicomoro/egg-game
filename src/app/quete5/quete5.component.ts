@@ -1,6 +1,7 @@
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { EggService } from 'src/assets/common/services/egg.service';
+import { ProfileService } from 'src/assets/common/services/profile.service';
 
 @Component({
   selector: 'app-quete5',
@@ -11,7 +12,8 @@ export class Quete5Component implements OnInit {
   public myForm: FormGroup;
   public hide = true;
   constructor(private fb: FormBuilder,
-    public service: EggService) {
+    public service: EggService,
+    public profileService: ProfileService) {
 
   }
   ngOnInit() {
@@ -33,6 +35,7 @@ export class Quete5Component implements OnInit {
 
   quete4Finish(){
     this.service.number = 5;
+    this.profileService.earnFinalMoney()
   }
 
   submit() {
