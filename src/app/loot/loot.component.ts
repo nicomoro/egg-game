@@ -18,7 +18,7 @@ export class LootComponent implements OnInit {
   public farming: number;
   public power: string;
   public id: string;
-
+  public money = this.serviceProfile.myMoney
   public hide = true;
 
 
@@ -36,6 +36,8 @@ export class LootComponent implements OnInit {
   }
 
   pay() {
+    const result = confirm('Do you really want to spend 5$?');
+    if (result && this.money>=5) {
     this.serviceProfile.spendMoney();
     console.log(this.serviceProfile.myMoney)
     this.service.getEggsRandom().subscribe(
@@ -49,6 +51,7 @@ export class LootComponent implements OnInit {
         this.farming = egg.farming;
         this.power = egg.power;
         this.id = egg.id;
-      });
+      })
+      }
   }
 }
