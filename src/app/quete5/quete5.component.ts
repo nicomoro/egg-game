@@ -20,7 +20,7 @@ export class Quete5Component implements OnInit {
     this.myForm = this.fb.group({
       reponse: ['',[ Validators.required, this.validator1.bind(this)]]
     });
-    
+
   }
   validator1(formControl: FormControl): {[s: string]: boolean} {
 // tslint:disable-next-line: triple-equals

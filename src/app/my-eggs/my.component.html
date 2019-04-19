@@ -1,6 +1,6 @@
 <div class="row">
 <div *ngFor="let egg of myEggs">
-    <div class="card m-4" style="max-width: 18em; height: 35rem">
+    <div class="card m-4" style="max-width: 18em; height: 38rem" [ngStyle]="{'background-color': egg.color}">
         <img class="card-img-top" src="{{egg.image}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{egg.name}}</h5>
@@ -11,3 +11,10 @@
       </div>
     </div>
   </div>
+  <div *ngIf="myEggs.length===0">
+    <div class="d-flex justify-content-center">
+      <div class="row mt-5">
+<h1>You have no egg !</h1>
+  </div>
+</div>
+</div>
